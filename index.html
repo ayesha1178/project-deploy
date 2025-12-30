@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="deploy.css">
+</head>
+<body>
+    <h1>Student Sign up Form</h1>
+    <form action="submit.html" method="post">
+        <label  for="Full Name">Full Name:</label><br>
+        <input type="text" id="Full Name" name="Full Name" placeholder="e.g.priya sharma" required>
+        <br><br>
+        <label for="Email">Email:</label><br>
+        <input type="text" id="Email" name="Email" placeholder="example@gmail.com" required> 
+        <br><br>
+        <label for="age">Age</label><br>
+        <input text="number" id="Age" name="age" placeholder="Your Age" required>
+        <br><br>
+        <label  for="password">Create Password</label><br>
+        <input type="password" id="password" name="password" placeholder="At least 6 character" required>
+        <br><br>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male</label>
+            <br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">other</label>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Interests (choose all that apply)</legend>
+            <input type="checkbox" id="Coding" name="Coding" value="Coding" required>
+            <label for="Coding">Coding</label>
+            <br>
+            <input type="checkbox" id="Drawing" name="Drawing" value="Drawing">
+            <label for="Drawing">Drawing</label>
+            <br>
+            <input type="checkbox" id="Sports" name="Sports" value="Sports">
+            <label for="Sports">Sports</label>
+        </fieldset>
+        <br><br>
+         <label for="class">Class/Grade</label>
+         <br>
+        <select id="class" name="class" required>
+          <option value="Grade" disabled selected>select grade</option>
+          <option value="Grade 1">Grade 1</option>
+          <option value="Grade 2">Grade 2</option>
+          <option value="Grade 3">Grade 3</option>
+          <option value="Grade 4">Grade 4</option> 
+          <option value="Grade 5">Grade 5</option>
+          </select>
+          <br><br>
+        <label for="about">Tell us (one line)about yourself</label>
+        <br>
+        <textarea id="about" name="about" rows="4" cols="50" 
+        placeholder="I love science...." required></textarea>
+        <p>Fields marked with * are required</p>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <br><br>
+
+    </form>
+    
+</body>
+</html>
